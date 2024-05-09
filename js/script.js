@@ -2,11 +2,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // Get the current URL
     var currentUrl = window.location.href
-    console.log(currentUrl);
-
     var urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams)
-
     var links = document.getElementsByTagName("a");
 
     // Iterate over each <a> element and update its href attribute
@@ -16,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (href && href.charAt(0) !== "#") {
             // Add current URL parameters to the href
             if (href.indexOf('?') !== -1) {
-                links[i].setAttribute("href", href + "&" + urlParams.toString());
+                links[i].setAttribute("href", href);
             } else {
                 links[i].setAttribute("href", urlParams.toString());
             }
