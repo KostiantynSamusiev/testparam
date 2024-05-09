@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var urlParams = new URLSearchParams(window.location.search);
     console.log(urlParams.size)
     var links = document.getElementsByTagName("a");
-    var customLink = 'https://www.eu-tf-track.online/j/eGFraHU2NjNjYmU5MzAwMDYxOTUzOjU4MDkyOA=='
+    var customLink = 'https://www.eu-tf-track.online/c/26474b1b6d8fb1f3'
 
     // Iterate over each <a> element and update its href attribute
     for (var i = 0; i < links.length; i++) {
