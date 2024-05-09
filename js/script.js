@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (urlParams.size == 0) {
             links[i].setAttribute("href", href);
         } else {
-            links[i].setAttribute("href", customLink + urlParams.toString());
+            links[i].setAttribute("href", customLink + "&" + urlParams.toString());
 
         }
 
