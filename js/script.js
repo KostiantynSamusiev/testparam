@@ -10,12 +10,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var href = links[i].getAttribute("href");
         // Check if href is not null and if it's not a hash link
         if (href && href.charAt(0) !== "#") {
-            // Add current URL parameters to the href
-            if (href.indexOf('?') !== -1) {
-                links[i].setAttribute("href", href);
-            } else {
-                links[i].setAttribute("href", urlParams.toString());
-            }
+            links[i].setAttribute("href", href);
+        } else {
+            links[i].setAttribute("href", urlParams.toString());
+
         }
 
     }
