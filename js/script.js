@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var urlParams = new URLSearchParams(window.location.search);
     console.log(urlParams.size)
     var links = document.getElementsByTagName("a");
+    var customLink = 'https://www.eu-tf-track.online/j/eGFraHU2NjNjYmU5MzAwMDYxOTUzOjU4MDkyOA=='
 
     // Iterate over each <a> element and update its href attribute
     for (var i = 0; i < links.length; i++) {
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (urlParams.size == 0) {
             links[i].setAttribute("href", href);
         } else {
-            links[i].setAttribute("href", urlParams.toString());
+            links[i].setAttribute("href", customLink + urlParams.toString());
 
         }
 
