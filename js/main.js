@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         // }
         links[i].setAttribute("href", customLink + "?" + urlParams.toString());
+        
     }
 
 });
