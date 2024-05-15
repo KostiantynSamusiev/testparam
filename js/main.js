@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var href = links[i].getAttribute("href");
         // Check if href is not null and if it's not a hash link
         if (urlParams.size == 0) {
-            // links[i].setAttribute("href", href);
             links[i].setAttribute("href", customLink);
 
         } else {
