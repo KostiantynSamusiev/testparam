@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         }
 
+        if (urlParams.includes('color')) {
+            console.log('has color')
+        }
     }
 
 });
