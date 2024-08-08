@@ -23,7 +23,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     function sayHi() {
-        window.open('https://youtube.com', '_blank');
+        // Define the URL you want to open
+        const url = "https://www.youtube.com";
+
+        // Ask the user if they want to open the link
+        const userConfirmed = confirm("Do you want to open this link in a new tab?");
+
+        // If the user clicks "OK", open the link in a new tab
+        if (userConfirmed) {
+            window.open(url, "_blank"); // "_blank" opens the link in a new tab
+        } else {
+            alert("You chose not to open the link.");
+        }
 
     }
 
