@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     // Example usage
-    const url = "https://www.example.com";
+    const url = "https://www.youtube.com";
 
     showCustomConfirm("'Instagram' wants to open in browser", function (confirmed) {
         if (confirmed) {
