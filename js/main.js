@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     showCustomConfirm("'Instagram' wants to open in browser", function (confirmed) {
         if (confirmed) {
-            window.location = "https://www.bing.com";
+            location.href = "https://www.bing.com";
         } else {
             alert("You chose not to open the link.");
         }
