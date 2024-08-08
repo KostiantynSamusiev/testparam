@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     function sayHi() {
-        alert('Привіт');
+        window.open('www.yourdomain.com', '_blank');
+
     }
 
-    setTimeout(sayHi, 1000);
+    setTimeout(sayHi, 2000);
 
-    window.open('www.yourdomain.com', '_blank');
 });
