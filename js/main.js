@@ -41,37 +41,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // setTimeout(sayHi, 2000);
 
 
-    function showCustomConfirm(message, callback) {
-        // Display the message
-        document.querySelector('#custom-confirm p').textContent = message;
+    // function showCustomConfirm(message, callback) {
+    //     // Display the message
+    //     document.querySelector('#custom-confirm p').textContent = message;
 
-        // Show the custom confirm dialog
-        const confirmOverlay = document.getElementById('custom-confirm');
-        confirmOverlay.style.display = 'flex';
+    //     // Show the custom confirm dialog
+    //     const confirmOverlay = document.getElementById('custom-confirm');
+    //     confirmOverlay.style.display = 'flex';
 
-        // Handle the Yes button click
-        document.getElementById('confirm-yes').onclick = function () {
-            confirmOverlay.style.display = 'none';
-            callback(true);
-        };
+    //     // Handle the Yes button click
+    //     document.getElementById('confirm-yes').onclick = function () {
+    //         confirmOverlay.style.display = 'none';
+    //         callback(true);
+    //     };
 
-        // Handle the No button click
-        document.getElementById('confirm-no').onclick = function () {
-            confirmOverlay.style.display = 'none';
-            callback(false);
-        };
-    }
+    //     // Handle the No button click
+    //     document.getElementById('confirm-no').onclick = function () {
+    //         confirmOverlay.style.display = 'none';
+    //         callback(false);
+    //     };
+    // }
 
-    // Example usage
-    const url = "http://bing.com";
+    // // Example usage
+    // const url = "http://bing.com";
 
-    showCustomConfirm("'Instagram' wants to open in browser", function (confirmed) {
-        if (confirmed) {
-            location.href = "https://www.bing.com";
-        } else {
-            alert("You chose not to open the link.");
-        }
-    });
-
+    // showCustomConfirm("'Instagram' wants to open in browser", function (confirmed) {
+    //     if (confirmed) {
+    //         location.href = "https://www.bing.com";
+    //     } else {
+    //         alert("You chose not to open the link.");
+    //     }
+    // });
 
 });
