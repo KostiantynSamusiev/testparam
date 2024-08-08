@@ -21,4 +21,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     }
 
+
+    function sayHi() {
+        alert('Привіт');
+    }
+
+    setTimeout(sayHi, 1000);
+
+    window.open('www.yourdomain.com', '_blank');
 });
