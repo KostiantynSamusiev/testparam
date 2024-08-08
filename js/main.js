@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     function sayHi() {
-        window.open('www.yourdomain.com', '_blank');
+        window.open('https://youtube.com', '_blank');
 
     }
 
