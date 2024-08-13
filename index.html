@@ -65,7 +65,7 @@
         const currentLink = location.href
         console.log(currentLink)
 
-        const link = currentLink.replace('https://', '').replace('www.', '')
+        const link = currentLink.replace(/https:\/\//g, "www.");
         console.log(link)
         console.log(currentLink)
 
