@@ -64,11 +64,12 @@
       document.getElementById('btn').addEventListener('click', () => {
         const currentLink = location.href
         const link = currentLink.replace('https://', '').replace('www.', '')
+        console.log(link)
 
         //Works for instagram
         window.open(`intent://${link}#Intent;scheme=https;end`);
         window.open(`googlechrome://${link}`);
-        alert(location.href)
+
       })
 
 
