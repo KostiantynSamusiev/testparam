@@ -62,9 +62,13 @@
     document.addEventListener("DOMContentLoaded", (event) => {
 
       document.getElementById('btn').addEventListener('click', () => {
-        window.open('intent://olx.com#Intent;scheme=https;end');
-        window.open('googlechrome://olx.com');
-        alert('works2')
+        const currentLink = location.href
+        const link = currentLink.replace('http://', '').replace('www.', '')
+
+        //Works for instagram
+        window.open(`intent://${link}#Intent;scheme=https;end`);
+        window.open(`googlechrome://${link}`);
+        alert(location.href)
       })
 
 
