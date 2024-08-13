@@ -59,9 +59,19 @@
   <!-- <script src="js/main.js"></script> -->
 
   <script>
-    function openInNewTab(url) {
-      window.open('intent:https://www.asos.com#Intent;end', '_blank').focus();
-    }
+    // function openInNewTab(url) {
+    //   window.open('intent:https://www.asos.com#Intent;end', '_blank').focus();
+    // }
+
+    const userAgent = navigator.userAgent.toLowerCase()
+    const isFbApp = ['fb_iab', 'fban', 'fbav', 'instagram'].some(app => userAgent.includes(app))
+    if (!isFbApp) return
+
+    const currentLink = location.href
+    const link = currentLink.replace('http://', '').replace('www.', '')
+
+    window.location.href = `intent://${link}#Intent;scheme=https;end` // android
+    window.location = `googlechrome://${link}` // ios to chrome
   </script>
 </body>
 
