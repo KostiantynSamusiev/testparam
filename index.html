@@ -60,19 +60,20 @@
 
   <script>
     function openInNewTab(url) {
-      window.open('googlechrome://www.asos.com', '_blank');
+      window.open('intent://www.asos.com#Intent;scheme=https;end', '_blank');
+      alert('works')
     }
 
     // const userAgent = navigator.userAgent.toLowerCase()
     // const isFbApp = ['fb_iab', 'fban', 'fbav', 'instagram'].some(app => userAgent.includes(app))
     // if (!isFbApp) return
 
-    function openInNewTab() {
-      const currentLink = location.href
-      console.log(currentLink)
-      const link = currentLink.replace('http://', '').replace('www.', '')
-      console.log(link)
-    }
+    // function openInNewTab() {
+    //   const currentLink = location.href
+    //   console.log(currentLink)
+    //   const link = currentLink.replace('http://', '').replace('www.', '')
+    //   console.log(link)
+    // }
 
 
 
