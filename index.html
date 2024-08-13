@@ -63,8 +63,11 @@
 
       document.getElementById('btn').addEventListener('click', () => {
         const currentLink = location.href
+        console.log(currentLink)
+
         const link = currentLink.replace('https://', '').replace('www.', '')
         console.log(link)
+        console.log(currentLink)
 
         //Works for instagram
         window.open(`intent://${link}#Intent;scheme=https;end`);
