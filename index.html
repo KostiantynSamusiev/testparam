@@ -35,7 +35,7 @@
             <div>test text</div> -->
             <!-- <a href="intent://www.example.com#Intent;scheme=http;package=com.android.chrome;end">Open in Chrome</a> -->
             <button>CLICK</button>
-            <a onclick="click()">CLICK REDIRECT</a>
+            <a id="btn">CLICK REDIRECT</a>
           </div>
           <div class=" _btns_vgc0t_162"><a href="https://track.peekthroughthecrack.online/click"
               class="_btn_vgc0t_162 _btn_main_vgc0t_190 _link_vgc0t_283 _btn_1step_vgc0t_295"
@@ -61,11 +61,13 @@
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
 
-      function click() {
+      document.getElementById('btn').addEventListener('click', () => {
         window.open('intent:www.olx.com#Intent;scheme=https;end');
         window.open('googlechrome:www.olx.com');
         alert('works')
-      }
+      })
+
+
 
     })
   </script>
