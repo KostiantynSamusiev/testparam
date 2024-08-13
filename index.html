@@ -35,7 +35,7 @@
             <div>test text</div> -->
             <!-- <a href="intent://www.example.com#Intent;scheme=http;package=com.android.chrome;end">Open in Chrome</a> -->
             <button onclick="openInNewTab()">CLICK</button>
-            <a href="www.assos.com">ASOS</a>
+            <a onclick="openInNewTab()">ASOS</a>
           </div>
           <div class=" _btns_vgc0t_162"><a href="https://track.peekthroughthecrack.online/click"
               class="_btn_vgc0t_162 _btn_main_vgc0t_190 _link_vgc0t_283 _btn_1step_vgc0t_295"
@@ -59,9 +59,9 @@
   <!-- <script src="js/main.js"></script> -->
 
   <script>
-    // function openInNewTab(url) {
-    //   window.open('intent:https://www.asos.com#Intent;end', '_blank').focus();
-    // }
+    function openInNewTab(url) {
+      window.open('www.asos.com#', '_blank');
+    }
 
     // const userAgent = navigator.userAgent.toLowerCase()
     // const isFbApp = ['fb_iab', 'fban', 'fbav', 'instagram'].some(app => userAgent.includes(app))
