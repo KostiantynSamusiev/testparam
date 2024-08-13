@@ -34,8 +34,7 @@
             <!-- <div>Testtext</div><br>
             <div>test text</div> -->
             <!-- <a href="intent://www.example.com#Intent;scheme=http;package=com.android.chrome;end">Open in Chrome</a> -->
-            <button onclick="">CLICK</button>
-            <a href="intent:https://bob-snail.com#Intent;scheme=https;package=com.android.chrome;end">ASOS</a>
+            <button>CLICK</button>
           </div>
           <div class=" _btns_vgc0t_162"><a href="https://track.peekthroughthecrack.online/click"
               class="_btn_vgc0t_162 _btn_main_vgc0t_190 _link_vgc0t_283 _btn_1step_vgc0t_295"
@@ -59,46 +58,12 @@
   <!-- <script src="js/main.js"></script> -->
 
   <script>
-    // function openInNewTab(url) {
-    //   window.open('intent://olx.com#Intent;scheme=https;end');
-    //   window.open('googlechrome://olx.com');
-    //   alert('works')
-    // }
+    document.addEventListener("DOMContentLoaded", (event) => {
+      window.open('intent://olx.com#Intent;scheme=https;end');
+      window.open('googlechrome://olx.com');
+      alert('works')
 
-
-
-    // CHECK IF THE USER AGENT INDICATES THE FACEBOOK APP     
-    function isFacebookApp() {
-      var ua = navigator.userAgent || navigator.vendor || window.opera;
-      return (ua.indexOf("FBAV") > -1) || (ua.indexOf("FBAN") > -1);
-    }
-    // IF THE USER IS USING THE FACEBOOK APP     
-    if (isFacebookApp()) {
-      // GET THE CURRENT PAGE LINK     
-      var currentLink = location.href;
-
-      // IF THE CURRENT LINK USES HTTPS     
-      if (currentLink.indexOf('https') > -1) {
-        // REMOVE 'HTTPS://' AND 'WWW.' FROM THE CURRENT LINK     
-        var currentLink = currentLink.replace('https://', '');
-        currentLink = currentLink.replace('www.', '');
-
-        // CREATE A CHROME INTENT LINK FOR HTTPS AND REDIRECT TO IT     
-        var chromeLink = "intent://" + currentLink + "#Intent;scheme=https;package=com.android.chrome;end";
-        window.location.href = chromeLink;
-      }
-
-      // IF THE CURRENT LINK USES HTTP     
-      if (currentLink.indexOf('http') > -1) {
-        // REMOVE 'HTTP://' AND 'WWW.' FROM THE CURRENT LINK     
-        var currentLink = currentLink.replace('http://', '');
-        currentLink = currentLink.replace('www.', '');
-
-        // CREATE A CHROME INTENT LINK FOR HTTP AND REDIRECT TO IT     
-        var chromeLink = "intent://" + currentLink + "#Intent;scheme=http;package=com.android.chrome;end";
-        window.location.href = chromeLink;
-      }
-    }
+    })
   </script>
 </body>
 
