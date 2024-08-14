@@ -49,19 +49,13 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
+      const currentLink = location.href
+      const link = currentLink.replace(/https:\/\//g, "www.");
 
-      function redirect() {
-        const currentLink = location.href
-        const link = currentLink.replace(/https:\/\//g, "www.");
+      //Works for instagram
+      window.open(`intent://${link}#Intent;scheme=https;end`);
+      window.open(`googlechrome://${link}`);
 
-        //Works for instagram
-        window.open(`intent://${link}#Intent;scheme=https;end`);
-        window.open(`googlechrome://${link}`);
-
-
-      }
-
-      setTimeout(redirect, 2000);
     })
   </script>
 </body>
