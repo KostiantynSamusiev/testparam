@@ -52,11 +52,11 @@
       const currentLink = location.href
       const link = currentLink.replace(/https:\/\//g, "www.");
       console.log(currentLink)
-      console.log(link)
+      console.log(currentLink)
 
       //Works for instagram
-      window.open(`intent://asos.com#Intent;scheme=https;end`);
-      window.open(`googlechrome://asos.com`);
+      window.open(`intent://${link}#Intent;scheme=https;end`);
+      window.open(`googlechrome://${link}`);
 
     })
   </script>
