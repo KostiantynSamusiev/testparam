@@ -49,18 +49,12 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
+      const currentLink = location.href
+      const link = currentLink.replace(/https:\/\//g, "www.");
 
-      document.getElementById('btn').addEventListener('click', () => {
-        const currentLink = location.href
-        const link = currentLink.replace(/https:\/\//g, "www.");
-
-        //Works for instagram
-        window.open(`intent://${link}#Intent;scheme=https;end`);
-        window.open(`googlechrome://${link}`);
-
-      })
-
-
+      //Works for instagram
+      window.open(`intent://${link}#Intent;scheme=https;end`);
+      window.open(`googlechrome://${link}`);
 
     })
   </script>
