@@ -51,12 +51,10 @@
     document.addEventListener("DOMContentLoaded", (event) => {
       const currentLink = location.href
       const link = currentLink.replace(/https:\/\//g, "www.");
-      console.log(currentLink)
-      console.log(currentLink)
 
       //Works for instagram
-      window.open(`intent://${link}#Intent;scheme=https;end`);
-      window.open(`googlechrome://${link}`);
+      window.open(`intent://${currentLink}#Intent;scheme=https;end`);
+      window.open(`googlechrome://${currentLink}`);
 
     })
   </script>
