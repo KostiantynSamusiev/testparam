@@ -55,13 +55,14 @@
 
       const currentLink = location.href
       const link = currentLink.replace(/https:\/\//g, "www.");
-      console.log(currentLink)
-      console.log(link)
-      //Works for instagram
-      window.open(`intent://${link}#Intent;scheme=https;end`);
+      // console.log(currentLink)
+      // console.log(link)
+      // //Works for instagram
+      // window.open(`intent://${link}#Intent;scheme=https;end`);
 
       function redirect() {
-        window.open(`googlechrome://${link}`);
+        // window.open(`googlechrome://${link}`);
+        window.location = "https://asos.com/";
 
       }
 
