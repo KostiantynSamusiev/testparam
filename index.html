@@ -54,7 +54,9 @@
     document.addEventListener("DOMContentLoaded", (event) => {
 
       const currentLink = location.href
-      const link = currentLink.replace(/https:\/\//g, "www.");
+      console.log(currentLink)
+      const link = currentLink.replace(/https:\/\//g, "");
+
       // //Works for instagram
       // window.open(`intent://${link}#Intent;scheme=https;end`);
       // window.open(`googlechrome://${link}`);
@@ -65,7 +67,7 @@
       a.id = "btn"
       document.body.appendChild(a);
       const redirectBtn = document.getElementById('btn');
-      redirectBtn.href = `googlechrome://hostiq.ua/`
+      redirectBtn.href = `googlechrome://${link}`
       redirectBtn.click()
     })
   </script>
