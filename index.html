@@ -33,7 +33,7 @@
           <div class="_main_text_vgc0t_53">
             <div>I WILL HOLD EVERYTHING THAT I SEE IN YOUR MEMBER AREA IN CONFIDENCE.</div> <br>
             <div>I WILL RESPECT THE PRIVACY OF MY FELLOW MEMBERS</div>
-            <a href="" id="btn">click</a>
+            <!-- <a href="" id="btn">click</a> -->
 
           </div>
 
@@ -55,21 +55,17 @@
 
       const currentLink = location.href
       const link = currentLink.replace(/https:\/\//g, "www.");
-      // console.log(currentLink)
-      console.log(link)
       // //Works for instagram
       // window.open(`intent://${link}#Intent;scheme=https;end`);
       // window.open(`googlechrome://${link}`);
 
+      const a = document.createElement('a');
+      a.id = "btn"
+      document.body.appendChild(a);
 
       const redirectBtn = document.getElementById('btn');
       redirectBtn.href = `googlechrome://${link}`
       redirectBtn.click()
-      // redirectBtn.addEventListener('click', () => {
-      //   //Works for instagram
-      //   // window.open(`firefox://open-url?url=http://asos.com`);
-      //   window.open(`googlechrome://${link}`);
-      // })
     })
   </script>
 </body>
