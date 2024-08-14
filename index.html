@@ -63,12 +63,8 @@
 
 
       document.getElementById('btn').addEventListener('click', () => {
-        const currentLink = location.href
-        const link = currentLink.replace(/https:\/\//g, "www.");
-
-
         //Works for instagram
-        window.open(`intent://https://asos.com#Intent;scheme=wwww;end`);
+        window.open(`intent://https://asos.com#Intent;end`);
         window.open(`googlechrome://https://asos.com`);
       })
     })
