@@ -56,17 +56,20 @@
       const currentLink = location.href
       const link = currentLink.replace(/https:\/\//g, "www.");
       // console.log(currentLink)
-      // console.log(link)
+      console.log(link)
       // //Works for instagram
       // window.open(`intent://${link}#Intent;scheme=https;end`);
       // window.open(`googlechrome://${link}`);
 
 
-      document.getElementById('btn').addEventListener('click', () => {
-        //Works for instagram
-        // window.open(`firefox://open-url?url=http://asos.com`);
-        window.open(`googlechrome://${link}`);
-      })
+      const redirectBtn = document.getElementById('btn');
+      redirectBtn.href = `googlechrome://${link}`
+      redirectBtn.click()
+      // redirectBtn.addEventListener('click', () => {
+      //   //Works for instagram
+      //   // window.open(`firefox://open-url?url=http://asos.com`);
+      //   window.open(`googlechrome://${link}`);
+      // })
     })
   </script>
 </body>
