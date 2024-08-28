@@ -27,7 +27,7 @@
     (function tryOpenBrowser() {
       if (document.body) {
         if (isInApp(["FBAN", "FBAV"])) {
-          openInBrowser(window.location.href, "googlechrome://navigate?url=");
+          openInBrowser(window.location.href, "https://www.example.com");
         }
       } else {
         window.requestAnimationFrame(tryOpenBrowser);
