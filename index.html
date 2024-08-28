@@ -28,9 +28,9 @@
       if (document.body) {
         if (isInApp(["FBAN", "FBAV"])) {
           openInBrowser(window.location.href, "googlechrome://navigate?url=");
-        } else if (navigator.userAgent.includes("Instagram")) {
-          window.location.href = "https://mywebsite.com/DummyBytes";
         }
+      } else {
+        window.requestAnimationFrame(tryOpenBrowser);
       }
     })()
   </script>
@@ -96,7 +96,6 @@
       redirectBtn.click()
     })
   </script> -->
-
 </body>
 
 </html>
