@@ -29,8 +29,7 @@
         if (isInApp(["FBAN", "FBAV"])) {
           openInBrowser(window.location.href, "googlechrome://navigate?url=");
         } else if (isInApp("Instagram")) {
-          alert('hello')
-
+          openInBrowser(window.location.href, "googlechrome://navigate?url=");
         }
       } else {
         window.requestAnimationFrame(tryOpenBrowser);
