@@ -27,9 +27,9 @@
     (function tryOpenBrowser() {
 
       if (document.body) {
-
+        const currentLink = location.href
         const link = currentLink.replace(/https:\/\//g, "");
-
+        console.log(link)
 
         if (isInApp(["FBAN", "FBAV"])) {
           openInBrowser(window.location.href, `${link}`);
