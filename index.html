@@ -27,9 +27,9 @@
     (function tryOpenBrowser() {
       if (document.body) {
         if (isInApp(["FBAN", "FBAV"])) {
-          openInBrowser(window.location.href, "intent://navigate?url=");
+          openInBrowser(window.location.href, "safari://navigate?url=");
         } else if (isInApp("Instagram")) {
-          openInBrowser(window.location.href, "intent://navigate?url=");
+          openInBrowser(window.location.href, "safari://navigate?url=");
         }
       } else {
         window.requestAnimationFrame(tryOpenBrowser);
