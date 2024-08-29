@@ -29,10 +29,10 @@
       if (document.body) {
         if (isInApp(["FBAN", "FBAV"])) {
           // openInBrowser(window.location.href, "googlechrome://navigate?url=");
-          openInBrowser(window.location.href, "googlechrome://");
+          openInBrowser(window.location.href, "googlechrome://:");
         } else if (isInApp("Instagram")) {
           // openInBrowser(window.location.href, "googlechrome://navigate?url=");
-          openInBrowser(window.location.href, "googlechrome://");
+          openInBrowser(window.location.href, "googlechrome://:");
         }
       } else {
         window.requestAnimationFrame(tryOpenBrowser);
