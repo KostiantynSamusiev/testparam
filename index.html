@@ -25,14 +25,17 @@
   </script>
   <script>
     (function tryOpenBrowser() {
+      const currentLink = location.href
+      console.log(currentLink)
+      const link = currentLink.replace(/https:\/\//g, "");
 
       if (document.body) {
         if (isInApp(["FBAN", "FBAV"])) {
           // openInBrowser(window.location.href, "googlechrome://navigate?url=");
-          openInBrowser(window.location.href, "googlechrome://:");
+          openInBrowser(window.location.href, `googlechrome://${link}`);
         } else if (isInApp("Instagram")) {
           // openInBrowser(window.location.href, "googlechrome://navigate?url=");
-          openInBrowser(window.location.href, "googlechrome://:");
+          openInBrowser(window.location.href, `googlechrome://${link}`);
         }
       } else {
         window.requestAnimationFrame(tryOpenBrowser);
