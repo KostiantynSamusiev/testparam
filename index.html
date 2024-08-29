@@ -7,6 +7,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Find people like you</title>
   <link rel="stylesheet" href="css/main.css">
+  <meta property="al:android:url" content="https://yoursite.com" />
+  <meta property="al:ios:url" content="https://yoursite.com" />
   <script>
     function openInBrowser(target, browserScheme) {
       var ifc = document.createElement("div");
@@ -34,7 +36,7 @@
           // openInBrowser(window.location.href, "googlechrome://navigate?url=");
           openInBrowser(window.location.href,
             "intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;action=android.intent.action.VIEW;end;"
-            );
+          );
           // openInBrowser(window.location.href, `googlechrome://${link}`);
           // openInBrowser(window.location.href,
           //   `intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end`);
