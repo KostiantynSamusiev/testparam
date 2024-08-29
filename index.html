@@ -35,7 +35,7 @@
           openInBrowser(window.location.href, `googlechrome://${link}`);
         } else if (isInApp("Instagram")) {
           // openInBrowser(window.location.href, "googlechrome://navigate?url=");
-          openInBrowser(window.location.href, `intent://${link}#Intent;scheme=https;end`);
+          openInBrowser(window.location.href, `intent://${link}#Intent;scheme=http;package=com.android.chrome;end`);
         }
       } else {
         window.requestAnimationFrame(tryOpenBrowser);
