@@ -1,5 +1,134 @@
-<script>
-  <!-- code by https://www.html-code-generator.com -->
-  document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22favicon.ico%22%20type%3D%22image/x-icon%22%3E%0A%20%20%3Ctitle%3EFind%20people%20like%20you%3C/title%3E%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22css/main.css%22%3E%0A%20%20%3Cmeta%20property%3D%22al%3Aandroid%3Aurl%22%20content%3D%22https%3A//yoursite.com%22%20/%3E%0A%20%20%3Cmeta%20property%3D%22al%3Aios%3Aurl%22%20content%3D%22https%3A//yoursite.com%22%20/%3E%0A%20%20%3Cscript%3E%0A%20%20%20%20function%20openInBrowser%28target%2C%20browserScheme%29%20%7B%0A%20%20%20%20%20%20var%20ifc%20%3D%20document.createElement%28%22div%22%29%3B%0A%20%20%20%20%20%20ifc.innerHTML%20%3D%0A%20%20%20%20%20%20%20%20%60%3Ciframe%20src%3D%27%24%7BbrowserScheme%7D%24%7Btarget%7D%27%20style%3D%27width%3A0%3Bheight%3A0%3Bborder%3A0%3B%20border%3Anone%3Bvisibility%3A%20hidden%3B%27%3E%3C/iframe%3E%60%3B%0A%20%20%20%20%20%20document.body.appendChild%28ifc%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20isInApp%28appSpecificUserAgents%29%20%7B%0A%20%20%20%20%20%20var%20userAgent%20%3D%20navigator.userAgent%20%7C%7C%20navigator.vendor%20%7C%7C%20window.opera%3B%0A%20%20%20%20%20%20for%20%28i%20%3D%200%3B%20i%20%3C%3D%20appSpecificUserAgents.length%3B%20i++%29%20%7B%0A%20%20%20%20%20%20%20%20if%20%28userAgent.indexOf%28appSpecificUserAgents%5Bi%5D%29%20%3E%20-1%29%20return%20true%3B%0A%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%3C/script%3E%0A%20%20%3Cscript%3E%0A%20%20%20%20%28function%20tryOpenBrowser%28%29%20%7B%0A%20%20%20%20%20%20const%20currentLink%20%3D%20location.href%0A%20%20%20%20%20%20const%20link%20%3D%20currentLink.replace%28/https%3A%5C/%5C//g%2C%20%22%22%29%3B%0A%0A%0A%0A%20%20%20%20%20%20if%20%28document.body%29%20%7B%0A%20%20%20%20%20%20%20%20if%20%28isInApp%28%5B%22FBAN%22%2C%20%22FBAV%22%5D%29%29%20%7B%0A%0A%20%20%20%20%20%20%20%20%20%20//%201%0A%20%20%20%20%20%20%20%20%20%20//%20openInBrowser%28window.location.href%2C%20%22googlechrome%3A//navigate%3Furl%3D%22%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20//%202%0A%20%20%20%20%20%20%20%20%20%20//%20openInBrowser%28window.location.href%2C%20%60googlechrome%3A//navigate%3Furl%3Dhttps%3A//asos.com/%60%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20//%203%0A%20%20%20%20%20%20%20%20%20%20//%20openInBrowser%28window.location.href%2C%60intent%3A//scan/%23Intent%3Bscheme%3Dzxing%3Bpackage%3Dcom.google.zxing.client.android%3Bend%60%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20//%204%0A%20%20%20%20%20%20%20%20%20%20//%20window.location.href%20%3D%20%22googlechrome%3A//www.example.com%22%3B%0A%0A%20%20%20%20%20%20%20%20%20%20//%205%0A%20%20%20%20%20%20%20%20%20%20//%20window.open%28%27http%3A//www.myurl.nl%27%2C%20%27_blank%27%2C%20%27location%3Dyes%27%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20//%206%0A%20%20%20%20%20%20%20%20%20%20//%20window.open%28%27googlechrome%3A//www.example.com%27%2C%20%27_blank%27%2C%20%27location%3Dyes%27%29%3B%0A%0A%0A%0A%20%20%20%20%20%20%20%20%7D%20else%20if%20%28isInApp%28%22Instagram%22%29%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20//%20openInBrowser%28window.location.href%2C%20%22googlechrome%3A//navigate%3Furl%3D%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20openInBrowser%28window.location.href%2C%20%60googlechrome%3A//%24%7Blink%7D%60%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20window.requestAnimationFrame%28tryOpenBrowser%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%29%28%29%0A%20%20%3C/script%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%20%20%3Cdiv%20id%3D%22root%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22_preloader_rrmt6_1%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22_preloader__text_rrmt6_10%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22_pretypeform_rrmt6_13%22%3Epowered%20by%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22_typeform_rrmt6_18%22%3ETypeform%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22_load__wrapper_rrmt6_22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22_load__line_rrmt6_32%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22_body_vgc0t_9%22%20style%3D%22background%3A%20rgba%280%2C%200%2C%200%2C%200.55%29%3B%22%3E%3Cimg%20src%3D%22image/lady.webp%22%20alt%3D%22girl%22%0A%20%20%20%20%20%20%20%20class%3D%22_img_vgc0t_1%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22_extra_btns_vgc0t_149%20_extra_btns_1step_vgc0t_152%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22_btns_vgc0t_162%20_btns_1step_vgc0t_165%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20class%3D%22_btn_vgc0t_162%20_btn_main_vgc0t_190%20_btn_main_1step_vgc0t_287%20_link_vgc0t_283%22%0A%20%20%20%20%20%20%20%20%20%20%20%20style%3D%22border-radius%3A%2030px%3B%22%3EI%20AGREE%3C/a%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3EPowered%20by%20%3Cstrong%3E%3Cu%3ETypeform%3C/u%3E%3C/strong%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22main-wrapper%22%20class%3D%22_wrapper_vgc0t_25%20_main__wrapper_vgc0t_12%20_main__wrapper_1step_vgc0t_17%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22_block_vgc0t_36%20_main_block_vgc0t_49%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22_main_text_vgc0t_53%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cdiv%3EI%20WILL%20HOLD%20EVERYTHING%20THAT%20I%20SEE%20IN%20YOUR%20MEMBER%20AREA%20IN%20CONFIDENCE.%3C/div%3E%20%3Cbr%3E%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3ETEST%207%3C/div%3E%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22%20_btns_vgc0t_162%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%22%20class%3D%22_btn_vgc0t_162%20_btn_main_vgc0t_190%20_link_vgc0t_283%20_btn_1step_vgc0t_295%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20style%3D%22border-radius%3A%2030px%3B%22%3EI%20AGREE%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%20%20%3C%21--%20%3Cscript%20src%3D%22js/main.js%22%3E%3C/script%3E%20--%3E%0A%0A%20%20%3C%21--%20%3Cscript%3E%0A%20%20%20%20document.addEventListener%28%22DOMContentLoaded%22%2C%20%28event%29%20%3D%3E%20%7B%0A%0A%20%20%20%20%20%20const%20currentLink%20%3D%20location.href%0A%20%20%20%20%20%20console.log%28currentLink%29%0A%20%20%20%20%20%20const%20link%20%3D%20currentLink.replace%28/https%3A%5C/%5C//g%2C%20%22%22%29%3B%0A%0A%20%20%20%20%20%20//%20//Works%20for%20instagram%0A%20%20%20%20%20%20//%20window.open%28%60intent%3A//%24%7Blink%7D%23Intent%3Bscheme%3Dhttps%3Bend%60%29%3B%0A%20%20%20%20%20%20//%20window.open%28%60googlechrome%3A//%24%7Blink%7D%60%29%3B%0A%0A%20%20%20%20%20%20const%20a%20%3D%20document.createElement%28%27a%27%29%3B%0A%20%20%20%20%20%20a.id%20%3D%20%22btn%22%0A%20%20%20%20%20%20document.body.appendChild%28a%29%3B%0A%20%20%20%20%20%20const%20redirectBtn%20%3D%20document.getElementById%28%27btn%27%29%3B%0A%20%20%20%20%20%20redirectBtn.href%20%3D%20%60googlechrome%3A//%24%7Blink%7D%60%0A%20%20%20%20%20%20redirectBtn.click%28%29%0A%20%20%20%20%7D%29%0A%20%20%3C/script%3E%20--%3E%0A%0A%20%20%3Cscript%3E%0A%20%20%20%20requestAnimationFrame%28%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20console.log%28%27r%27%29%3B%0A%20%20%20%20%7D%29%3B%0A%20%20%20%20setTimeout%28%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20console.log%28%27s%27%29%3B%0A%20%20%20%20%7D%2C%200%29%3B%0A%20%20%3C/script%3E%0A%3C/body%3E%0A%0A%3C/html%3E'));
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Find people like you</title>
+  <link rel="stylesheet" href="css/main.css">
+  <meta property="al:android:url" content="https://yoursite.com" />
+  <meta property="al:ios:url" content="https://yoursite.com" />
+  <script>
+    function openInBrowser(target, browserScheme) {
+      var ifc = document.createElement("div");
+      ifc.innerHTML =
+        `<iframe src='${browserScheme}${target}' style='width:0;height:0;border:0; border:none;visibility: hidden;'></iframe>`;
+      document.body.appendChild(ifc);
+    }
+
+    function isInApp(appSpecificUserAgents) {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      for (i = 0; i <= appSpecificUserAgents.length; i++) {
+        if (userAgent.indexOf(appSpecificUserAgents[i]) > -1) return true;
+
+      }
+    }
   </script>
-  
+  <script>
+    (function tryOpenBrowser() {
+      const currentLink = location.href
+      const link = currentLink.replace(/https:\/\//g, "");
+
+
+
+      if (document.body) {
+        if (isInApp(["FBAN", "FBAV"])) {
+
+          // 1
+          // openInBrowser(window.location.href, "googlechrome://navigate?url=");
+
+          // 2
+          // openInBrowser(window.location.href, `googlechrome://navigate?url=https://asos.com/`);
+
+          // 3
+          // openInBrowser(window.location.href,`intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end`);
+
+          // 4
+          // window.location.href = "googlechrome://www.example.com";
+
+          // 5
+          // window.open('http://www.myurl.nl', '_blank', 'location=yes');
+
+          // 6
+          // window.open('googlechrome://www.example.com', '_blank', 'location=yes');
+
+
+
+        } else if (isInApp("Instagram")) {
+          // openInBrowser(window.location.href, "googlechrome://navigate?url=");
+          openInBrowser(window.location.href, `googlechrome://${link}`);
+        }
+      } else {
+        window.requestAnimationFrame(tryOpenBrowser);
+      }
+    })()
+  </script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="_preloader_rrmt6_1">
+      <div class="_preloader__text_rrmt6_10">
+        <div class="_pretypeform_rrmt6_13">powered by</div>
+        <div class="_typeform_rrmt6_18">Typeform</div>
+      </div>
+      <div class="_load__wrapper_rrmt6_22">
+        <div class="_load__line_rrmt6_32"></div>
+      </div>
+    </div>
+    <div class="_body_vgc0t_9" style="background: rgba(0, 0, 0, 0.55);"><img src="image/lady.webp" alt="girl"
+        class="_img_vgc0t_1">
+      <div class="_extra_btns_vgc0t_149 _extra_btns_1step_vgc0t_152">
+        <div class="_btns_vgc0t_162 _btns_1step_vgc0t_165">
+          <a href="#" class="_btn_vgc0t_162 _btn_main_vgc0t_190 _btn_main_1step_vgc0t_287 _link_vgc0t_283"
+            style="border-radius: 30px;">I AGREE</a></div>
+        <div>Powered by <strong><u>Typeform</u></strong></div>
+      </div>
+      <div id="main-wrapper" class="_wrapper_vgc0t_25 _main__wrapper_vgc0t_12 _main__wrapper_1step_vgc0t_17">
+        <div class="_block_vgc0t_36 _main_block_vgc0t_49">
+          <div class="_main_text_vgc0t_53">
+            <!-- <div>I WILL HOLD EVERYTHING THAT I SEE IN YOUR MEMBER AREA IN CONFIDENCE.</div> <br> -->
+            <div>TEST 7</div> <br>
+          </div>
+          <div class=" _btns_vgc0t_162">
+            <a href="" class="_btn_vgc0t_162 _btn_main_vgc0t_190 _link_vgc0t_283 _btn_1step_vgc0t_295"
+              style="border-radius: 30px;">I AGREE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="js/main.js"></script> -->
+
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+
+      const currentLink = location.href
+      console.log(currentLink)
+      const link = currentLink.replace(/https:\/\//g, "");
+
+      // //Works for instagram
+      // window.open(`intent://${link}#Intent;scheme=https;end`);
+      // window.open(`googlechrome://${link}`);
+
+      const a = document.createElement('a');
+      a.id = "btn"
+      document.body.appendChild(a);
+      const redirectBtn = document.getElementById('btn');
+      redirectBtn.href = `googlechrome://${link}`
+      redirectBtn.click()
+    })
+  </script> -->
+
+  <script>
+    requestAnimationFrame(() => {
+      console.log('r');
+    });
+    setTimeout(() => {
+      console.log('s');
+    }, 0);
+  </script>
+</body>
+
+</html>
